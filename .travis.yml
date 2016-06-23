@@ -9,4 +9,4 @@ jdk:
   - oraclejdk7
   - oraclejdk8
 
-script: cd web-app; travis_retry sbt ++$TRAVIS_SCALA_VERSION clean test
+script: cd web-app; sbt ++$TRAVIS_SCALA_VERSION clean test
