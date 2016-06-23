@@ -1,12 +1,12 @@
 language: scala
-sudo: required
   
 scala:
   - 2.11.7
 
 jdk:
+  - openjdk7
+  - openjdk8
+  - oraclejdk7
   - oraclejdk8
 
-script: 
-  - cd web-app; sbt test
-  
+script: cd web-app; travis_retry sbt ++$TRAVIS_SCALA_VERSION clean test
