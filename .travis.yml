@@ -8,5 +8,5 @@ jdk:
   - oraclejdk8
 
 script: 
-  - sbt test
+  - cd web-app; sbt test
   
