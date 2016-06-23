@@ -1,0 +1,12 @@
+language: scala
+sudo: required
+  
+scala:
+  - 2.11.7
+
+jdk:
+  - oraclejdk8
+
+script: 
+  - sbt test
+  
